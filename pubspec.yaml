@@ -36,8 +36,10 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  country_pickers: ^2.0.0
 
 dev_dependencies:
+  http:
   flutter_test:
     sdk: flutter
 
@@ -78,12 +80,12 @@ flutter:
   fonts:
     - family: ElsieSwashCaps
       fonts:
-        - asset: fonts/ElsieSwashCaps-Black.ttf
-        - asset: fonts/ElsieSwashCaps-Regular.ttf
+        - asset: lib\fonts\ElsieSwashCaps-Black.ttf
+        - asset: lib\fonts\ElsieSwashCaps-Regular.ttf
 
     - family: Axiforma
       fonts:
-        - asset: fonts\Kastelov - Axiforma Light.otf
+        - asset: lib\fonts\Kastelov - Axiforma Light.otf
   #         weight: 700
   #
   # For details regarding fonts from package dependencies,

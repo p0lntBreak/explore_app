@@ -18,11 +18,11 @@ class _ExploreState extends State<Explore> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.light(
+        colorScheme: const ColorScheme.light(
             primary: Colors.white, brightness: Brightness.light),
       ),
       darkTheme: ThemeData(),
-      home: Homepage(),
+      home: const Homepage(),
     );
   }
 }
