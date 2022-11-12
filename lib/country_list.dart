@@ -1,7 +1,8 @@
-// ignore_for_file: depend_on_referenced_packages
+// ignore_for_file: depend_on_referenced_packages, must_be_immutable
 
 import 'dart:convert';
 
+import 'package:country_pickers/country.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -42,3 +43,32 @@ class User {
 
 */
 
+//Create a list view using the country_data_model
+class CountryList extends StatelessWidget {
+  Map<String, dynamic> country;
+
+  CountryList(this.country, {super.key, required Country SelectedCountry});
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        ListView.builder(
+            itemCount: country.length,
+            itemBuilder: (context, index) {
+              String key = country.keys.elementAt(index);
+
+              return Row(
+                children: [
+                  const Padding(
+                    padding: EdgeInsets.all(15.0),
+                  ),
+                  Text('$key :'),
+                  Text(country[key].toString())
+                ],
+              );
+            })
+      ],
+    );
+  }
+}
