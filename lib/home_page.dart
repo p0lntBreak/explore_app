@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'country_data_model.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -79,6 +80,7 @@ class _HomepageState extends State<Homepage> {
                       color: Colors.grey[100],
                     ),
                     child: TextFormField(
+                      enableSuggestions: true,
                       textAlign: TextAlign.center,
                       keyboardType: TextInputType.text,
                       textInputAction: TextInputAction.done,
